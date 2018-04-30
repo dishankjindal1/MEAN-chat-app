@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 router.use((req, res, next) => {
-    console.log('api called by ' + req.ip);
+    console.log('api called by ' + req.ip.replace(/^.*:/, ''));
     next();
 });
 router.post('/logindata', (req, res) => {
