@@ -104,6 +104,10 @@ MIT
 MIT
 MIT
 
+@angular/http@4.0.3
+MIT
+MIT
+
 @angular/common@4.0.3
 MIT
 MIT

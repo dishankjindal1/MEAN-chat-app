@@ -1,9 +1,15 @@
 const express = require('express');
 const http = require('http');
 
-const app = express();
-const api = require('./api');
+const helmet = require('helmet');
 
+const app = express();
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(helmet());
+
+const api = require('./api');
 
 app.use(express.static('public'));
 
