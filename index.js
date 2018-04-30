@@ -9,4 +9,4 @@ app.use(express.static('public'));
 
 app.use('/api', api);
 
-http.createServer(app).listen(80);
+http.createServer(app).listen(3000);
