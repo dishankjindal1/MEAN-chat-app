@@ -36,6 +36,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     this.loginForm.reset();
+    this.loginForm.setValue(['isRemember', 'false']);
   }
 
 }
